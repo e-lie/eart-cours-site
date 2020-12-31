@@ -1,6 +1,9 @@
 baseURL = "https://cursus-janvier2020.uptime-formation.fr/"
-languageCode = "fr-FR"
 title = "Formation Ansible"
+languageCode = "fr-FR"
+defaultContentLanguage = "fr"
+# Force to have /en/my-page and /fr/my-page routes, even for default language.
+defaultContentLanguageInSubdir= true
 
 # Modifiez le thème pour qu'il soit utilisé par défaut à chaque génération de site.
 theme = "hugo-theme-learn"
@@ -14,3 +17,19 @@ editURL = "https://github.com/e-lie/hugo_cursus_janvier2020"
 
 
 # [menu.shortcuts]
+
+
+[Languages]
+    [Languages.fr]
+        title = "Imaginaires techniques - Le medium informatique"
+        weight = 2
+        languageName = "Français"
+        landingPageURL = "/fr"
+        landingPageName = "<i class='fas fa-home'></i> Accueil"
+
+    [Languages.zh]
+        title = "艺术媒介 -- 信息技术"
+        weight = 3
+        languageName = "简体中文"
+        landingPageURL = "/zh"
+        landingPageName = "<i class='fas fa-home'></i> 家"
