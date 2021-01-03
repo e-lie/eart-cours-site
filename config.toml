@@ -28,7 +28,7 @@ editURL = "https://github.com/e-lie/hugo_cursus_janvier2020"
         landingPageName = "<i class='fas fa-home'></i> Accueil"
 
     [Languages.zh]
-        title = "艺术媒介 -- 信息技术"
+        title = "计算机作为一种艺术媒介"
         weight = 3
         languageName = "简体中文"
         landingPageURL = "/zh"
