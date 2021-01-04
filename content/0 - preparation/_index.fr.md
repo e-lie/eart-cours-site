@@ -43,14 +43,14 @@ Utilisez pour vous connecter **votre prénom** (comme en dessous) et le mot de p
  - etudiante2
  - etudiante3
 
- ## Deux écrans pour l'aide et la démonstration
+## Deux écrans pour l'aide et la démonstration
 
- Une fois connectées vous avez deux ordinateurs disponibles que vous pouvez voir.
+Une fois connectées vous avez deux ordinateurs disponibles que vous pouvez voir.
 
  - `vnc-formateur-elie` : mon écran où je vais montrer les choses
  - `vnc-`+ votre prénom : votre écran que vous pouvez utiliser
 
- Ouvrez les deux ordinateurs dans deux onglets de votre navigateur web.
+Ouvrez les deux ordinateurs dans deux onglets de votre navigateur web.
 
 Est-ce que vous pouvez voir 
 
