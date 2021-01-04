@@ -37,7 +37,7 @@ Utilisez pour vous connecter **votre prénom** (comme en dessous) et le mot de p
  - mingyue
  - kejing
  - xuanyang
- - nanxi
+ - nanxi,
  - jianwei
  - etudiante1
  - etudiante2

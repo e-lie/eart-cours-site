@@ -70,10 +70,11 @@ Chaque ligne de code est une instruction de la recette.
 ### Les principaux types d'instruction du langage Python
 
 Pour simplifier Il en existe quatre :
-  - Les variables : `nombre2 = 1+1`
-  - Les instructions de base : `print("Bonjour à toutes")`
-  - Les conditions : `if(nombre < 10):`
-  - Les boucles : `for nombre in range(0,1):`
+
+- Les variables : `nombre2 = 1+1`
+- Les instructions de base : `print("Bonjour à toutes")`
+- Les conditions : `if(nombre < 10):`
+- Les boucles : `for nombre in range(0,1):`
 
 Nous verrons progressivement ces éléments.
 
