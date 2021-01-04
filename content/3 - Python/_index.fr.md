@@ -163,6 +163,13 @@ r = 6*7
 - Ouvrir le logiciel `thonny`.
 
 - Afficher le texte `Ce cours est bientôt terminé` avec `print`.
+- Enregistrez dans le fichier `exercice1.py`.
+
 - Afficher le texte `Je suis rangé dans une variable` en le rangeant dans une variable nommée `mavariable`.
+- Enregistrez dans le fichier `exercice2.py`.
+
 - Afficher le résultat du calcul 4 x 5.
+- Enregistrez dans le fichier `exercice3.py`.
+
 - Afficher le résultat de 10 x 10 en le rangeant dans une variable.
+- Enregistrez dans le fichier `exercice4.py`.
