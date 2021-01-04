@@ -29,15 +29,19 @@ weight: 2
 登录网页浏览器：https://guacamole.dopl.uk 。这是我创建的一个提供虚拟电脑的网站。只有在培训时间内才能使用。我们将看看如何在个人电脑上复制我们的做法。
 
 用来登录**你的名字**（如下），密码**devops101**。
- - 微雨
- - 子夫
- - 斝
- - 汉阳
- - 明月
- - 龙井
- - 旬阳
- - 楠溪
- - 建伟
+
+ - weiyu
+ - zifu
+ - jia
+ - hanyang
+ - mingyue
+ - kejing
+ - xuanyang
+ - nanxi
+ - jianwei
+ - etudiante1
+ - etudiante2
+ - etudiante3
 
  ## 两块屏幕用于帮助和演示。
 
