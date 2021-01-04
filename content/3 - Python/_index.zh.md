@@ -155,6 +155,18 @@ r = 6*7
 2 ** 3 #指数化
 ```
 
+# 简单的互动性
+
+在简单的Python中，它可以从用户那里请求信息
+与`input("信息")`。
+
+```python
+reponse = input("Combien font 6 fois 7 ?")
+```
+
+N.B.: `input()`返回的是一个**字符串 !** (=文本而非整数)
+在通利的演示
+
 ###实际操作
 
 - 打开 "thonny "软件。
@@ -171,4 +183,3 @@ r = 6*7
 - 将10×10的结果放入变量中显示。
 - 保存在文件`exercise4.py`中。
 
-通过www.DeepL.com/Translator（免费版）翻译

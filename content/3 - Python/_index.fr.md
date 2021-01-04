@@ -158,6 +158,20 @@ r = 6*7
 2 ** 3  # Exponentiation
 ```
 
+
+# Interactivité simple
+
+En Python simple, il est possible de demander une information à l'utilisateur
+avec `input("message")`
+
+```python
+reponse = input("Combien font 6 fois 7 ?")
+```
+
+N.B. : ce que renvoie `input()` est une **chaîne de caractère !** (= du texte pas un entier)
+
+Demo dans Thonny
+
 ### Exercice pratique
 
 - Ouvrir le logiciel `thonny`.
@@ -173,3 +187,9 @@ r = 6*7
 
 - Afficher le résultat de 10 x 10 en le rangeant dans une variable.
 - Enregistrez dans le fichier `exercice4.py`.
+
+- Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il aura dans deux ans et afficher le résultat.
+
+- Calculer l'age dans deux ans, mais cette fois en demandant l'année de naissance (approximativement, sans tenir compte du jour et mois de naissance...).
+
+- Demander un mot à l'utilisateur. Afficher la longueur du mot avec un message tel que "Ce mot fait X caractères !"
