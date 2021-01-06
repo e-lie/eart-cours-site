@@ -1,5 +1,5 @@
 ---
-title: 2 - L'éditeur de Code VSCode 
+title: 2 - L'éditeur de Code Thonny
 weight: 2
 ---
 

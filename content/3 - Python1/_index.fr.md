@@ -178,16 +178,16 @@ Demo dans Thonny
 - Ouvrir le logiciel `thonny`.
 
 - Afficher le texte `Ce cours est bientôt terminé` avec `print`.
-- Enregistrez dans le fichier `exercice1.py`.
+- Enregistrez dans le fichier `exercice1_1.py`.
 
 - Afficher le texte `Je suis rangé dans une variable` en le rangeant dans une variable nommée `mavariable`.
-- Enregistrez dans le fichier `exercice2.py`.
+- Enregistrez dans le fichier `exercice1_2.py`.
 
 - Afficher le résultat du calcul 4 x 5.
-- Enregistrez dans le fichier `exercice3.py`.
+- Enregistrez dans le fichier `exercice1_3.py`.
 
 - Afficher le résultat de 10 x 10 en le rangeant dans une variable.
-- Enregistrez dans le fichier `exercice4.py`.
+- Enregistrez dans le fichier `exercice1_4.py`.
 
 - Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il aura dans deux ans et afficher le résultat.
 
