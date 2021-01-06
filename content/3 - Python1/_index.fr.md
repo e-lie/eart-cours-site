@@ -1,5 +1,5 @@
 ---
-title: 3 - Le langage Python  
+title: 3 - Le langage Python - Partie1
 weight: 2
 ---
 
@@ -67,7 +67,7 @@ Chaque ligne de code est une instruction de la recette.
 
 
 
-### Les principaux types d'instruction du langage Python
+### Les principaux types d'instructions du langage Python
 
 Pour simplifier Il en existe quatre :
 
@@ -173,7 +173,7 @@ N.B. : ce que renvoie `input()` est une **chaîne de caractère !** (= du texte 
 
 Demo dans Thonny
 
-### Exercice pratique
+### Exercices pratique
 
 - Ouvrir le logiciel `thonny`.
 
