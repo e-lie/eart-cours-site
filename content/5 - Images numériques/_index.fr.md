@@ -84,16 +84,20 @@ Attention ! : il faut préciser ou enregistrer l'image avec le chemin de son dos
 ### Charger une image existante
 
 ```python
-imgbase = Image.open("./baseimg/fantasy-persona.jpg")
-pxbase = imgbase.load()
+img_fantasy = Image.open("./baseimg/fantasy-persona.jpg")
+pixels = img_fantasy.load()
 ```
 
 Attention ! : il faut préciser ou enregistrer l'image avec le chemin de son dossier et son nom.
 
 ## Exercices pratiques
 
-- Créer une image de 30x30 pixel et mettre tous les pixels à rouge.
-- Créer une image de 255x255 et mettre comme couleur rouge et verte la position du pixel (0 pour le bleu).
-- Ouvrir l'image résultante dans le logiciel krita.
-- Créer une image de 10x10 ou le premier pixel est rouge, le deuxième est vert, le troisième bleu, le quatrième rouge etc en continuant ainsi.
-- Ouvrir l'image dans krita.
+- `exercice5_1.py` : Créer une image de 30x30 pixel et mettre tous les pixels à rouge. affichez l'image avec `img.show()`
+- `exercice5_2.py` : Créer une image de 255x255 et mettre comme couleur rouge et verte la position du pixel (0 pour le bleu).
+- Enregistrer l'image avec `img.save()` et l'ouvrir dans le logiciel krita. Zoomez pour voir les pixels.
+- `exercice5_3.py` : Créer une image de 10x10 ou le premier pixel est rouge, le deuxième est vert, le troisième bleu, le quatrième rouge etc en continuant ainsi.
+- Enregistrez et ouvrir l'image dans krita.
+- Exercice addition d'images:
+    - Ouvrez deux petites images d'internet avec `Image.open()`
+    - Créez une troisième image de 30x30.
+    - Pour chaque pixel de cette troisième image prenez l'addition des pixels corespondant de chacune des deux images ouvertes image.
