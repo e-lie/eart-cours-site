@@ -1,7 +1,7 @@
 ---
-title: 7 - Installer l'environnement de développement ython
-weight: 2
-draft: yes
+title: Installer l'environnement de développement ython
+weight: 4
+draft: no
 ---
 
 

@@ -1,6 +1,6 @@
 ---
-title: 7 - 安装Python开发环境
-weight: 2
+title: 安装Python开发环境
+weight: 4
 draft: no
 ---
 
