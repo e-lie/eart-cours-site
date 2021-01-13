@@ -15,3 +15,13 @@ Ouvrir le `Terminal` avec la recherche ou dans les utilitaires systeme. Copiez e
 - `brew install thonny`
 - `pip3 install pillow`
 - `brew install --cask krita`
+
+### Méthode alternative
+
+- `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
+- `sudo python3 get-pip.py`
+- `sudo pip3 install pillow`
+
+Installer krita : https://krita.org/fr/telechargement/krita-desktop/
+
+

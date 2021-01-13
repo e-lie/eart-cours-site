@@ -14,3 +14,14 @@ draft: no
 - `brew install thonny`
 - `pip3 install pillow`
 - `brew install --cask krita`
+
+
+OR
+
+
+- `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
+- `sudo python3 get-pip.py`
+- `sudo pip3 install pillow`
+
+Installer krita : https://krita.org/fr/telechargement/krita-desktop/
+
