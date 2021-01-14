@@ -180,17 +180,79 @@ Demo dans Thonny
 - Afficher le texte `Ce cours est bientôt terminé` avec `print`.
 - Enregistrez dans le fichier `exercice1_1.py`.
 
+{{% expand "exercice1_1.py" %}}
+
+```python
+print("Ce cours est bientôt terminé.")
+```
+
+{{% /expand %}}
+
 - Afficher le texte `Je suis rangé dans une variable` en le rangeant dans une variable nommée `mavariable`.
 - Enregistrez dans le fichier `exercice1_2.py`.
+
+{{% expand "exercice1_2.py" %}}
+
+```python
+variable = "Je suis rangé dans une variable"
+print(variable)
+```
+
+{{% /expand %}}
 
 - Afficher le résultat du calcul 4 x 5.
 - Enregistrez dans le fichier `exercice1_3.py`.
 
+{{% expand "exercice1_3.py" %}}
+
+```python
+print(4*5)
+```
+
+{{% /expand %}}
+
 - Afficher le résultat de 10 x 10 en le rangeant dans une variable.
 - Enregistrez dans le fichier `exercice1_4.py`.
 
+{{% expand "exercice1_1.py" %}}
+
+```python
+resultat = 10 * 10
+print(resultat)
+```
+
+{{% /expand %}}
+
 - Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il aura dans deux ans et afficher le résultat.
+
+{{% expand "age1.py" %}}
+
+```python
+age = input("Quel est votre age ?")
+print("Dans deux ans vous aurez " + str(age + 2) + " ans." )
+```
+
+{{% /expand %}}
 
 - Calculer l'age dans deux ans, mais cette fois en demandant l'année de naissance (approximativement, sans tenir compte du jour et mois de naissance...).
 
+{{% expand "age2.py" %}}
+
+```python
+annee_naissance = int(input("Donnez moi votre année de naissance."))
+age = 2021 - annee_naissance + 2
+print("Dans deux ans vous aurez " + str(age) + " ans.")
+```
+
+{{% /expand %}}
+
 - Demander un mot à l'utilisateur. Afficher la longueur du mot avec un message tel que "Ce mot fait X caractères !"
+
+{{% expand "correction" %}}
+
+```python
+mot = input("Donnez moi un mot")
+print(mot.length())
+```
+
+{{% /expand %}}

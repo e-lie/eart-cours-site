@@ -66,8 +66,32 @@ print(x < 0 or x == 2) # faut ou vrai donne vrai
 
 ## Exercices
 
-- Demandez un nombre et affichez "positif" s'il est supérieur à 0.
+- Demandez un nombre et affichez "positif" s'il est supérieur ou égal à 0.
+
+{{% expand "correction" %}}
+
+```python
+entier = input("Donnez moi un nombre entier (positif ou négatif).")
+if entier >= 0:
+    print("positif")
+```
+
+{{% /expand %}}
+
+
 - Demander l'âge de l'utilisateur, puis affichez "votre age est pair" si l'age est divisible par 2. Si l'age est divisible par 3 affichez "votre age est divisible par 3" .
+
+{{% expand "age3.py" %}}
+
+```python
+age = input("Quel est votre age ?")
+if age % 2 == 0:
+    print("votre age est pair.")
+if age % 3 == 0:
+    print("votre age est multiple de 3.")
+```
+
+{{% /expand %}}
 
 # 3. Boucles
 
@@ -128,5 +152,37 @@ for i in range(0,10):
 # Exercices pratiques
 
 - Affichez avec une boucle les entiers de 1 à 10.
+
+{{% expand "correction" %}}
+
+```python
+for entier in range(10):
+    print(entier+1)
+```
+
+{{% /expand %}}
+
 - Affichez avec une boucle les entiers de 1 à 20 s'ils sont pairs.
+
+{{% expand "correction" %}}
+
+```python
+for index in range(1,21):
+    if index % 2 == 0:
+        print(index)
+```
+
+{{% /expand %}}
+
 - Affichez 3 fois les entiers pairs de 1 à 10 en utilisant deux boucles l'une dans l'autre.
+
+{{% expand "correction" %}}
+
+```python
+for n in range(3):
+    for m in range(10):
+        print(m+1)
+```
+
+{{% /expand %}}
+
