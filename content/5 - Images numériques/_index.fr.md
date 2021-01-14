@@ -101,3 +101,34 @@ Attention ! : il faut préciser ou enregistrer l'image avec le chemin de son dos
     - Ouvrez deux petites images d'internet avec `Image.open()`
     - Créez une troisième image de 30x30.
     - Pour chaque pixel de cette troisième image prenez l'addition des pixels corespondant de chacune des deux images ouvertes image.
+
+## Production d'une image avec une programme et un processus
+
+- Créez un programme qui ouvre l'une de vos images.
+- Ajoutez la fonction `repeat` suivante (collez le code ci dessous dans votre programme):
+
+```python
+def repeat(imgbase, repeatx, repeaty):
+    pxbase = imgbase.load()
+    img = Image.new( 'RGB', (imgbase.size[0]*repeatx,imgbase.size[1]*repeaty), "black") # create a new black image
+    pixels = img.load() # create the pixel map
+    for repx in range(repeatx):
+        for repy in range(repeaty):
+            for x in range(imgbase.size[0]):    # for every col:
+                for y in range(imgbase.size[1]):    # For every row
+                        pixels[x+repx*imgbase.size[0], y+repy*imgbase.size[1]] = pxbase[x, y]
+    return img
+```
+
+- Demandez à l'utilisateur du programme d'entrer le nom de l'image à ouvrir
+- Demander à l'utilisateur d'entrer le nombre de répétition horizontale (`repeatx`).
+- Demander à l'utilisateur d'entrer le nombre de répétition verticale (`repeaty`).
+- Ajoutez la fonction suivante pour ajouter deux couleurs:
+
+```python
+def rgb_add(rgb_tuple1, rgb_tuple2):
+    return rgb_tuple1[0]+rgb_tuple2[0], rgb_tuple1[1]+rgb_tuple2[1], rgb_tuple1[2]+rgb_tuple2[2]
+```
+
+- Ajoutez la couleur `(200, 0, 0)` à tous les pixels multiples de 5.
+- Ajoutez la couleur `(100, 200, 0)` à tous les pixels multiples de 7.
