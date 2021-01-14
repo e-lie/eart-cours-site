@@ -102,7 +102,7 @@ Attention ! : il faut préciser ou enregistrer l'image avec le chemin de son dos
     - Créez une troisième image de 30x30.
     - Pour chaque pixel de cette troisième image prenez l'addition des pixels corespondant de chacune des deux images ouvertes image.
 
-## Production d'une image avec une programme et un processus
+## Production d'une image avec une programme interactif.
 
 - Créez un programme qui ouvre l'une de vos images.
 - Ajoutez la fonction `repeat` suivante (collez le code ci dessous dans votre programme):
