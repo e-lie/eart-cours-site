@@ -1,5 +1,5 @@
 ---
-title: 4 - Le langage Python - Partie2
+title: 5 - Les conditions
 weight: 2
 ---
 

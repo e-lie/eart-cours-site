@@ -1,6 +1,6 @@
 ---
-title: 6 - La librairie tortue graphique
-weight: 4
+title: 8 - La librairie tortue graphique
+weight: 2
 draft: no
 ---
 

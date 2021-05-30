@@ -1,5 +1,5 @@
 ---
-title: 5 - Images numériques 
+title: 7 - Images numériques 
 weight: 2
 ---
 
