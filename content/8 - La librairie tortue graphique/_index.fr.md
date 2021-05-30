@@ -159,8 +159,14 @@ turtle.done()
 
 Que faire si nous voulons changer de couleur ? Il existe une fonction `pencolor()` pour changer la couleur de la tortue (du crayon).
 
-Pour désigner une couleur on peut soit utiliser
+Pour désigner une couleur on peut soit utiliser son nom en anglais `"red"`, `"white"` etc ou sa quantité de rouge, vert et bleu avec des nombres comme nous avons vus dans le cours 7 sur les images numériques.
 
+![](../../../../images/eart/220px-RGB_sliders.svg.png)
+![](../../../../images/eart/220px-AdditiveColor.svg.png)
+![](../../../../images/eart/rgb-examples.png)
+
+
+Par exemple:
 
 ```python
 import turtle 
@@ -176,9 +182,9 @@ lucie.forward(30)
 
 ##### Exercices:
 
-1. Utiliser un outil en ligne (colorpicker) pour trouver comment code la couleur **cyan foncé**: vous pouvez utiliser le site http://www.colorpicker.com/
-2. Utilisez une boucle pour faire une étoile comme dans l'exemple 5 précédent mais en utilisant 20 nuances de vert de plus en plus clair (indice utilisez la variable i pour changer la quantité de vert).
-3. Il existe aussi une fonction pour changer la couleur du fond (background color). Essayer de la chercher dans la documentation officielle https://docs.python.org/zh-cn/3/library/turtle.html (en Chinois ici). Il est très important de pouvoir lire un peu les documentations pour découvrir de nouvelles fonctions même si c'est assez incompréhensible et effrayant au départ.
+1. Utilisez un outil en ligne (colorpicker) pour trouver comment code la couleur **cyan foncé**: vous pouvez utiliser le site http://www.colorpicker.com/
+2. Il existe aussi une fonction pour changer la couleur du fond (background color). Essayer de la chercher dans la documentation officielle https://docs.python.org/zh-cn/3/library/turtle.html (en Chinois ici). Il est très important de pouvoir lire un peu les documentations pour découvrir de nouvelles fonctions même si c'est assez incompréhensible et effrayant au départ.
+3. Utilisez une boucle pour faire une étoile comme dans l'exemple 5 précédent mais en utilisant 20 nuances de vert de plus en plus clair (indice utilisez la variable i pour changer la quantité de vert).
 4. Essayez de dessiner sur un fond noir maintenant.
 
 ### Example 7: Variables
