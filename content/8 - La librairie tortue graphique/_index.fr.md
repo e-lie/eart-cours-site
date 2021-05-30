@@ -83,8 +83,11 @@ Lorsqu'on veux décrire un angle en degré il faut simplement se rappeler qu'un 
 
 - Un angle droit c'est `360/4 = 90` degrés comme pour le carré précédent
 - Un tier de tour c'est `360/3 = 120` degrés
+- Demi tour c'est donc `360/2 = 180` degrés
 
-Pour tourner dans l'autre sens on utilise la fonction `left()`.
+la fonction `right(angle)` permet de tourner à droite en remplaçant `angle` par un nombre de degrés.
+
+Pour tourner dans l'autre sens on utilise la fonction `left(angle)`.
 
 **Exercices:**:
 
@@ -287,17 +290,3 @@ for i in range(180):
 turtle.done()
 ```
 
-<!-- ### Idées
-
-- faire une partie sur la boucle while, la position et la cloture d'une étoile avec une condition sur la position
-- exporter les images
-- ajouter un avatar gif à la place de la tortue
-- faire des fonctions
-- dessiner plusieurs figures avec plusieurs fonctions
-- Demander aux étudiantes de faire une fonction pour une figure originale par personne (à faire à la maison)
-- ... puis de s'envoyer le code pour que chacun fasse une composition avec les fonctions de tout le monde.
-
-
-- faire une animation qui fait un pavage de la fenetre de en haut à gauche à en bas à droite puis qui efface tout et recommence à l'infini.
-
--->

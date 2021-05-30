@@ -40,8 +40,6 @@ Nous allons voir ici le codage numérique d'image le plus simple : on l'appelle 
 ![](../../../../images/eart/220px-AdditiveColor.svg.png)
 ![](../../../../images/eart/rgb-examples.png)
 
-
-
 ## Images en Python
 
 Pour manipuler des images en Python il existe pleins de possibilité. La plus classique est la **bibliothèque (library)** appelée **PIL (Python Imaging Library)**.
