@@ -1,7 +1,7 @@
 ---
-title: 6 - Le langage Python - Partie3
+title: 7 - Les fonctions en Python
 weight: 2
-draft: yes
+draft: no
 ---
 
 
@@ -114,4 +114,3 @@ def aire_disque(rayon):
 
 
 
-## Librairies externes

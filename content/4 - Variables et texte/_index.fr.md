@@ -1,5 +1,5 @@
 ---
-title: 3 - Le langage Python - Partie1
+title: 3 - Les variables en Python 
 weight: 2
 ---
 
@@ -67,14 +67,15 @@ Chaque ligne de code est une instruction de la recette.
 
 
 
-### Les principaux types d'instructions du langage Python
+### Les principaux "ingrédients" du langage Python
 
-Pour simplifier Il en existe quatre :
+Pour simplifier Il existe **5 ingrédients** de base du langage python (on parle de constructions syntaxiques) :
 
 - Les variables : `nombre2 = 1+1`
-- Les instructions de base : `print("Bonjour à toutes")`
+- Les fonctions de base : `print("Bonjour à toutes")`
 - Les conditions : `if(nombre < 10):`
 - Les boucles : `for nombre in range(0,1):`
+- Les fonctions: `def addition(nombre_a, nombre_b):`
 
 Nous verrons progressivement ces éléments.
 
