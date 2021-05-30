@@ -9,3 +9,13 @@
 - [ ] Demander aux étudiantes de faire une fonction pour une figure originale par personne (à faire à la maison)
 - [ ] ... puis de s'envoyer le code pour que chacun fasse une composition avec les fonctions de tout le monde.
 
+- [ ] faire un exercice de dessin à la main a traduire en image automatique !
+
+# idées de procédure:
+
+- [ ] écrire quelques lettre de l'alphabet
+- [ ] intégrer de l'aléatoire !!
+
+# idées de références:
+- [ ] John Maeda et le MIT media lab
+- [ ] Riot Grrrrls
