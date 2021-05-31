@@ -1,7 +1,7 @@
 ---
 title: 9 - Les fonctions en Python
 weight: 2
-draft: yes
+draft: no
 ---
 
 
