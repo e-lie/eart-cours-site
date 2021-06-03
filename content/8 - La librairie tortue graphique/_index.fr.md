@@ -42,6 +42,15 @@ turtle.done()
 1. changer le nom de la tortue en lucie
 1. faite la reculer de 100 avec la fonction `backward()`
 
+{{%expand "correction 1. + 2." %}}
+```python
+import turtle
+lucie = turtle.Turtle()
+lucie.backward(100)
+turtle.done()
+```
+{{% /expand%}}
+
 ### Exemple 2: dessiner un carré.
 
 Un seule ligne c'est un peu limité et ennuyeux. On peut tourner la tortue d'un angle précis pour dessiner des figures plus intéressantes.
@@ -82,7 +91,50 @@ Pour tourner dans l'autre sens on utilise la fonction `left(angle)`.
 ##### Exercices:
 
 1. Modifier le programme précédent pour dessiner le carré avec seulement les fonction `left()` et `backward()`
+
+{{%expand "correction 1. " %}}
+```python
+import turtle
+
+silly = turtle.Turtle()
+
+silly.backward(50)
+silly.left(90)  # 90 degrés signifie un angle droit
+
+silly.backward(50)
+silly.left(90)
+
+silly.backward(50)
+silly.left(90)
+
+silly.backward(50)
+silly.left(90)
+
+turtle.done()
+```
+{{% /expand%}}
+
+
 2. Dessinez un triangle : quel angle faut-il utiliser ?
+
+{{%expand "correction 2." %}}
+```python
+import turtle
+
+silly = turtle.Turtle()
+
+silly.forward(50)
+silly.right(120)  # 120 degrés est l'angle complémentaire de 60 degré pour repartir en arrière
+silly.forward(50)
+silly.right(120)
+
+silly.forward(50)
+silly.right(120)
+
+turtle.done()
+```
+{{% /expand%}}
+
 
 ### Exemple 3: Dessiner un carré avec un boucle
 
@@ -134,7 +186,38 @@ turtle.done()
 Remarquez que dans ce programme la tortue avance d'un nombre de pixel différente à chaque fois. Que se passerai-t-il si plutôt que de multiplier i par 10 on le multipliait par lui même (i*i) ?
 
 - Essayez `i*i` à la place de `i*10`
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+spiral = turtle.Turtle()
+
+for i in range(20):
+    spiral.forward(i * i)
+    print(i*i)
+    spiral.right(144)
+    
+turtle.done()
+```
+{{% /expand%}}
+
+
 - Essayer avec `i*10` comme précédemment mais en **augmentant le nombre de tours** pour faire une étoile plus grande
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+spiral = turtle.Turtle()
+
+for i in range(40):
+    spiral.forward(i * 10)
+    spiral.right(144)
+    
+turtle.done()
+```
+{{% /expand%}}
 
 ### Example 6: Changer les couleurs
 
@@ -182,9 +265,53 @@ lucie.forward(30)
 
 ##### Exercices:
 
-1. Utilisez un outil en ligne (colorpicker) pour trouver comment code la couleur **cyan foncé**: vous pouvez utiliser le site http://www.colorpicker.com/
+1. Utilisez un outil en ligne (colorpicker) pour trouver comment coder la couleur **cyan foncé**: vous pouvez utiliser le site http://www.colorpicker.com/. Il faut également changer le mode de couleur avant d'utiliser un codage RVB entre 0 et 255. Comment faire cela ?
+
+{{%expand "correction" %}}
+```python
+myscreen = turtle.getscreen()
+myscreen.colormode(255) # we need to switch to 255 colormode
+lucie.pencolor((0,100,100))
+```
+{{% /expand%}}
+
+
+
 2. Il existe aussi une fonction pour changer la couleur du fond (background color). Essayer de la chercher dans la documentation officielle https://docs.python.org/zh-cn/3/library/turtle.html (en Chinois ici). Il est très important de pouvoir lire un peu les documentations pour découvrir de nouvelles fonctions même si c'est assez incompréhensible et effrayant au départ.
+
+{{%expand "correction" %}}
+```python
+myscreen = turtle.getscreen()
+myscreen.bgcolor("black")
+```
+{{% /expand%}}
+
 3. Utilisez une boucle pour faire une étoile comme dans l'exemple 5 précédent mais en utilisant 20 nuances de vert de plus en plus clair (indice utilisez la variable i pour changer la quantité de vert).
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+spiral = turtle.Turtle()
+spiral.pensize(2)
+spiral.speed(9)
+
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+myscreen.bgcolor("black")
+
+
+
+for i in range(100):
+    spiral.pencolor(0, i*2, 0)
+    spiral.forward(i * 10)
+    spiral.right(144)
+    
+turtle.done()
+```
+{{% /expand%}}
+
+
 4. Essayez de dessiner sur un fond noir maintenant.
 
 ### Example 7: Variables
@@ -196,6 +323,7 @@ Plutôt que de calculer nous-mêmes le nombre à chaque fois, nous pouvons défi
 Ici, nous avons fixé le nombre de côtés à 6 et la longueur des côtés à 70. Que se passe-t-il si nous changeons les variables ?
 
 
+{{%expand "correction" %}}
 ```python
 import turtle 
 
@@ -211,6 +339,7 @@ for i in range(nombre_de_cotes):
     
 turtle.done()
 ```
+{{% /expand%}}
 
 ##### Exercices:
 
@@ -219,13 +348,71 @@ turtle.done()
 3. Créez une palette de couleur avec une variable et une liste par exemple `ma_palette_rvb = [ (150, 0, 0), (0, 150, 0), (0, 0, 150) ]` ou `ma_palette = ["red", "yellow", "purple"]`
 4. Utilisez cette palette pour changer la couleur à chaque côté du polygone (indice il faut utiliser `pencolor(ma_palette[i % len(ma_palette)]))`) nous allons expliquer pourquoi.
 
+{{%expand "correction" %}}
+```python
+import turtle 
 
-### Exemple 7: Boucles imbriquées
+lucie = turtle.Turtle()
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+
+nombre_de_cotes = 11
+longueur_cote = 50
+angle = 360.0 / nombre_de_cotes
+调色板 = [ "red", "#1F85DE", (150,200,30), "black" ]
+
+for i in range(nombre_de_cotes):
+    lucie.pencolor(调色板[i % len(调色板)])
+    lucie.pensize(5)
+    lucie.forward(longueur_cote)
+    lucie.right(angle)
+
+turtle.done()
+```
+{{% /expand%}}
+
+#### Bonus: spirale multicolore et export d'image
+
+Pour exporter le résultat d'un dessin `turtle` on peut la fonction `myscreen.getcanvas().postscript(file="polycolor1.eps")` comme dans l'exemple suivant.
+
+En changeant le nom à chaque exécution on peut ainsi créer une série de dessin à conserver pour une recherche.
+
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+lucie = turtle.Turtle()
+lucie.speed(0)
+lucie.pensize(5)
+
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+
+nombre_de_cotes = 11
+longueur_cote = 5
+angle = 360.0 / nombre_de_cotes + 3
+调色板 = [ "red", "#1F85DE", (150,200,30), "black" ] # palette de couleur en Chinois
+
+for i in range(500):
+    lucie.pencolor(调色板[i % len(调色板)])
+    lucie.forward(longueur_cote + i )
+    lucie.right(angle)
+    
+
+myscreen.getcanvas().postscript(file="polycolor1.eps")
+turtle.done()
+```
+{{% /expand%}}
+
+
+### Exemple 8: Boucles imbriquées
 
 Cela donnera une matrice de points de 5 points de large et de 7 points de haut. Essayez d'expérimenter avec les variables en haut pour changer le nombre de points et la distance entre eux.
 
 La boucle `for` à l'intérieur (`for i in range(width):`) dessine une seule ligne de points. Le code fait ensuite reculer la tortue, puis la fait descendre d'une ligne.
 
+{{%expand "correction" %}}
 ```python
 import turtle 
 
@@ -235,7 +422,7 @@ dot_distance = 25
 width = 5
 height = 7
 
-lucie.penup()
+lucie.penup() # penup permet de déplacer la tortue sans dessiner jusqu'à ce que pendown() soit appelé
 
 for y in range(height):
     for i in range(width):
@@ -248,13 +435,79 @@ for y in range(height):
     
 turtle.done()
 ```
+{{% /expand%}}
 
 ##### Exercices:
 
 1. modifiez le code précédent pour avoir un couleur différente à chaque ligne
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+lucie = turtle.Turtle()
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+lucie.speed(0)
+
+dot_distance = 10
+width = 10
+height = 11
+
+lucie.penup()
+
+for y in range(height):
+    lucie.pencolor(255, y* int(255 // height), 0)
+    for i in range(width):
+        lucie.dot()
+        lucie.forward(dot_distance)
+    lucie.backward(dot_distance * width)
+    lucie.right(90)
+    lucie.forward(dot_distance)
+    lucie.left(90)
+    
+turtle.done()
+```
+{{% /expand%}}
+
 2. modifiez le code pour avoir une couleur différente à chaque colonne (mais le même groupe de couleur sur chaque ligne)
 
-### Exemple 8: Changer la vitesse et faire sauter le crayon à une position définie
+{{%expand "correction" %}}
+```python
+import turtle 
+
+lucie = turtle.Turtle()
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+myscreen.bgcolor("black")
+lucie.speed(0)
+
+dot_distance = 20
+width = 15
+height = 7
+
+lucie.penup()
+lucie.pensize(8)
+
+for y in range(height):
+    for i in range(width):
+        # 将颜色的最大值除以宽度
+        # 确定如何在每一步增加颜色
+        lucie.pencolor(200, i*int(255/width), 0)
+        lucie.pendown()
+        lucie.dot(10)
+        lucie.penup()
+        lucie.forward(dot_distance)
+    lucie.backward(dot_distance * width)
+    lucie.right(90)
+    lucie.forward(dot_distance)
+    lucie.left(90)
+    
+turtle.done()
+```
+{{% /expand%}}
+
+### Exemple 9: Changer la vitesse et faire sauter le crayon à une position définie
 
 La fonction `turtle.setposition(x, y)` fixera la position de la tortue aux coordonnées que vous avez introduites. (0, 0) est situé au centre de l'écran - là où la tortue a commencé. Notez que vous devez vous assurer que le stylo de la tortue est en haut (`penup()`), sinon elle tracera une ligne vers ce point.
 
@@ -291,4 +544,53 @@ turtle.done()
 1. Mettez la vitesse à 1 et essayez de bien comprendre comment marche ce dessin
 2. Essayez de modifier le code pour dessiner une étoile à 8 branches/traits seulement
 3. Maintenant que nous savons lever le crayon, dessinez deux étoiles identiques l'une à côté de l'autre.
+
+{{%expand "correction" %}}
+```python
+import turtle 
+
+ninja_turtle = turtle.Turtle()
+
+ninja_turtle.speed(2)
+
+centre_etoile_1 = (0, 0)
+centre_etoile_2 = (200, 200)
+nombre_de_branches = 8
+
+for i in range(nombre_de_branches):
+    ninja_turtle.forward(100)
+    ninja_turtle.right(30)
+    ninja_turtle.forward(20)
+    ninja_turtle.left(60)
+    ninja_turtle.forward(50)
+    ninja_turtle.right(30)
+    
+    ninja_turtle.penup()
+    ninja_turtle.setposition(centre_etoile_1)
+    ninja_turtle.pendown()
+    
+    ninja_turtle.right(360//nombre_de_branches)
+
+# Pour se déplacer on doit lever le crayon changer la position puis le redescendre
+ninja_turtle.penup()
+ninja_turtle.setposition(centre_etoile_2)
+ninja_turtle.pendown()
+
+for i in range(nombre_de_branches):
+    ninja_turtle.forward(100)
+    ninja_turtle.right(30)
+    ninja_turtle.forward(20)
+    ninja_turtle.left(60)
+    ninja_turtle.forward(50)
+    ninja_turtle.right(30)
+    
+    ninja_turtle.penup()
+    ninja_turtle.setposition(centre_etoile_2)
+    ninja_turtle.pendown()
+    
+    ninja_turtle.right(360//nombre_de_branches)
+
+turtle.done()
+```
+{{% /expand%}}
 
