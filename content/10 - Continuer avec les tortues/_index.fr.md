@@ -21,7 +21,9 @@ carre(100)
 turtle.done()
 ```
 
-Exercice: avec une boucle for dessinez 17 carrés de tailles 10, 20 jusqu'à 170.
+#### Exercice:
+
+- avec une boucle for dessinez 17 carrés de tailles 10, 20 jusqu'à 170.
 
 <!-- {{%expand "correction" %}}
 ```python
@@ -67,7 +69,7 @@ Nous avons déjà deux paramètres pour le dessin de notre polygone :
 
 Remarque : la variable `angle` est une variable mais ce n'est pas un paramètre de la fonction car elle est calculée à partir des autres variables (on a pas besoin de la préciser en utilisant la fonction)
 
-Exercices:
+#### Exercices:
 
 - écrire une fonction `polygone(nombre_de_cotes, longueur_cote)` qui permet de dessiner facilement des polygones d'une forme et d'une taille donnés en paramètres.
 
@@ -145,7 +147,9 @@ Comme dans l'exemple précédent, pour générer un nombre entier entre 0 et un 
 
 Exemple `int(random()*5)` génère un entier entre 0 et 5 et 
 
-Exercice: générer un nombre entier entre 0 et 9 et affichez le avec `print()`
+#### Exercices:
+
+- générer un nombre entier entre 0 et 9 et affichez le avec `print()`
 
 <!-- {{%expand "correction" %}}
 ```python
@@ -157,7 +161,6 @@ print(int(random()*10))
 
 La fonction random peut avoir plein d'utilitées. Par exemple on peut écrire une fonction pour générer une couleur de dessin aléatoire.
 
-Exercice:
 
 - écrire une fonction `couleur_aleatoire()` qui choisi une couleur aléatoire en générant aléatoirement le rouge, le vert et le bleu entre 0 et 255 avec random. enregistrez les trois couleurs dans trois variables `rouge`, `vert` et `bleu`.
 
@@ -226,7 +229,9 @@ for i in range(15):
 turtle.done()
 ```
 
-Exercices: à partir de ce code
+#### Exercices:
+
+A partir du code de l'exemple.
 
 - écrire une fonction `brin_d_herbe(angle, longueur, couleur, epaisseur)` qui dessine un brin d'herbe.
 
