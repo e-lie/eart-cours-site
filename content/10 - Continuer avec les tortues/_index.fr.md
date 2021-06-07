@@ -25,7 +25,7 @@ turtle.done()
 
 - avec une boucle for dessinez 17 carrés de tailles 10, 20 jusqu'à 170.
 
-<!-- {{%expand "correction" %}}
+{{%expand "correction" %}}
 ```python
 import turtle 
 
@@ -40,7 +40,7 @@ for i in range(17):
 
 turtle.done()
 ```
-{{% /expand%}} -->
+{{% /expand%}}
 
 ### Exemple 2 : faire une fonction à partir d'instructions de dessin: le polygone
 
