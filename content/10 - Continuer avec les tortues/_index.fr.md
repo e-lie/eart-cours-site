@@ -242,7 +242,7 @@ A partir du code de l'exemple.
 
 - écrire une fonction `prairie(position_initiale, nombre_brins_x, nombre_brins_y, espacement)` qui utilise deux boucles pour dessiner une prairie (une grille de brin d'herbe comme dans l'exemple 8 de la partie précédente.
 
-<!-- {{%expand "correction" %}}
+{{%expand "correction" %}}
 ```python
 import turtle
 
@@ -290,7 +290,7 @@ prairie(0, 0, 10, 10, 25)
 
 turtle.done()
 ```
-{{% /expand%}} -->
+{{% /expand%}}
 
 
 ### Ajouter de l'aléatoire
@@ -300,7 +300,7 @@ Modifiez la fonction brin d'herbe et utilisez la fonction `random()` pour :
 1. ajouter une variation aléatoire de 20 degrés sur l'angle du brin d'herbe.
 2. choisir une couleur verte aléatoire différente pour chaque brin
 
-<!-- {{%expand "correction" %}}
+{{%expand "correction" %}}
 ```python
 import turtle
 from random import random
@@ -345,4 +345,102 @@ prairie(-125, -125, 10, 10, 25)
 
 turtle.done()
 ```
-{{% /expand%}} -->
+{{% /expand%}}
+
+
+### Correction des fonctions de dessin collectives
+
+```python
+import turtle
+from random import random
+
+
+lucie = turtle.Turtle()
+lucie.speed(0)
+myscreen = turtle.getscreen()
+myscreen.colormode(255)
+
+
+pallette = [ "orange", "pink", (200, 50, 150)]
+pallette2 = [ "red", "green", "blue" ]
+palette_pink = ["pink"]
+
+
+    
+def etoile2(une_tortue, position, taille, nombre_pointes):
+    une_tortue.begin_fill()
+    une_tortue.penup()
+    une_tortue.setposition(position)
+    une_tortue.pendown()
+    une_tortue.fillcolor("yellow")
+    une_tortue.pencolor("yellow")
+    angle = 360/nombre_pointes
+    for i in range(nombre_pointes):
+        une_tortue.forward(taille)
+        une_tortue.left(2 * angle)
+        une_tortue.forward(taille)
+        une_tortue.right(angle)
+    une_tortue.end_fill()
+    
+
+def etoile_jaune(une_tortue, position):
+    une_tortue.begin_fill()
+    une_tortue.penup()
+    une_tortue.setposition(position)
+    une_tortue.pendown()
+    une_tortue.fillcolor("yellow")
+    for i in range(5):
+        une_tortue.forward(50)
+        une_tortue.right(144)
+    
+
+def spirographe(une_tortue, position, pallette, nombre_cote, diametre_cercle):
+    ok.penup()
+    ok.setposition(position)
+    ok.pendown()
+    for i in range(nombre_cote):
+        tortue.pencolor(pallette[j % len(pallette)])
+        une_tortue.circle(diametre_cercle)
+        une_tortue.lt(360/nombre_cote)
+        
+        
+def flocon(une_tortue, position, pallette, nombre_de_cotes, longeur_cote):
+    une_tortue.penup()
+    une_tortue.setposition(position)
+    une_tortue.pendown()
+    angle = 360.0 / nombre_de_cotes
+    for i in range(nombre_de_cotes):
+        une_tortue.forward(longeur_cote)
+        une_tortue.right(angle)
+        une_tortue.pencolor(pallette[ i % len( pallette2)])
+        une_tortue.penup()
+        une_tortue.setposition(position)
+        une_tortue.pendown()
+
+
+def multicarre(une_tortue, position, pallette, nombre_carre):
+    une_tortue.penup()
+    une_tortue.setposition(position)
+    une_tortue.pendown()
+    for j in range(nombre_carre):
+        une_tortue.pencolor(pallette[j % len(pallette)])
+        for i in range(4):
+            une_tortue.forward((i+j)*j)
+            une_tortue.right(98)
+            
+
+lucie.pensize(3)
+myscreen.bgcolor("purple")
+
+for i in range(20):
+    position_x = int(random()*300)
+    position_y = int(random()*300)
+    nombre_cotes = int(random()*50) + 10
+    longueur_cote = int(random()*190) + 10
+    flocon(lucie, (position_x, position_y), pallette, nombre_cotes, longueur_cote)
+
+
+
+    
+turtle.done() 
+```
