@@ -154,13 +154,13 @@ Exemple `int(random()*5)` génère un entier entre 0 et 5 et
 
 - générer un nombre entier entre 0 et 9 et affichez le avec `print()`
 
-<!-- {{%expand "correction" %}}
+{{%expand "correction" %}}
 ```python
 from random import random
 
 print(int(random()*10))
 ```
-{{% /expand%}} -->
+{{% /expand%}}
 
 La fonction random peut avoir plein d'utilitées. Par exemple on peut écrire une fonction pour générer une couleur de dessin aléatoire.
 
@@ -171,7 +171,7 @@ La fonction random peut avoir plein d'utilitées. Par exemple on peut écrire un
 
 - Utilisez cette fonction pour dessiner deux étoiles de couleur aléatoire avec la fonction `etoile()` de l'exemple précédent.
 
-<!-- 
+
 {{%expand "correction" %}}
 ```python
 import turtle
@@ -202,7 +202,7 @@ etoile(30, couleur_aleatoire(), 5)
 
 turtle.done()
 ```
-{{% /expand%}} -->
+{{% /expand%}}
 
 ### Exemple 4: Herbes partie 1, dessiner quelques herbes avec une fonction
 
