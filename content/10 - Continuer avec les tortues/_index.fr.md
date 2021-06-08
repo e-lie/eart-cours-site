@@ -9,8 +9,9 @@ draft: no
 ```python
 import turtle 
 
+smart = turtle.Turtle()
+
 def carre(longueur_cote):
-    smart = turtle.Turtle()
     for i in range(4):
         smart.forward(longueur_cote)
         smart.right(90)
@@ -23,14 +24,16 @@ turtle.done()
 
 #### Exercice:
 
+- Comparez le code de cet exemple avec celui l'exemple 3 de la partie 1 de tortue graphique (faire un carré avec une boucle).
 - avec une boucle for dessinez 17 carrés de tailles 10, 20 jusqu'à 170.
 
 {{%expand "correction" %}}
 ```python
 import turtle 
 
+smart = turtle.Turtle()
+
 def carre(longueur_cote):
-    smart = turtle.Turtle()
     for i in range(4):
         smart.forward(longueur_cote)
         smart.right(90)
@@ -75,7 +78,7 @@ Remarque : la variable `angle` est une variable mais ce n'est pas un paramètre 
 
 - comme dans l'exemple 1, écrivez une boucle pour dessiner tous les polygones entre 3 et 9 cotes.
 
-<!-- {{%expand "correction" %}}
+{{%expand "correction" %}}
 ```python
 import turtle 
 
@@ -92,7 +95,7 @@ for j in range(3,10):
     
 turtle.done()
 ```
-{{% /expand%}} -->
+{{% /expand%}}
 
 ### Exemple 3: fonction d'étoile multicolore aléatoire
 
